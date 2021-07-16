@@ -1,0 +1,8 @@
+{
+  "name": "progressive-disclosure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexander-morris/progressive-disclosure.git",
+  "author": "alexander-morris <al@openkoi.com>",
+  "license": "MIT"
+}
