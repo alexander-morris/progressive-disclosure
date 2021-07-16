@@ -61,16 +61,16 @@ async function generateSlide (slideInfo) {
     return `
     <div class="slide">
         <div class="left">
-            <img src="${ slideInfo.img }"
+            <img src="img/${ slideInfo.image }">
         </div>
-        <div>
+        <div class="right">
             <h1>${ slideInfo.title }</h1>
             <span>${ slideInfo.text }</span>
             <a class="cta" href="${ slideInfo.callToAction.link }">${ slideInfo.callToAction.text }</a>
             <a class="cta learnMore" href="${ slideInfo.learnMore.link }">${ slideInfo.learnMore.text }</a>
         </div>
-        <a class="backButton startover" onclick="showSlide('genesis')">start over</a>
-        <a class="backButton" onclick="showSlide('${ window.slideId }')">back</a>
+        <a class="backButton startover" onclick="showSlide('genesis')"><i class="fas fa-redo"></i></a>
+        <a class="backButton" onclick="showSlide('${ window.slideId }')"><i class="fas fa-arrow-left"></i></a>
     </div>
     `
 }
@@ -108,7 +108,7 @@ function generateChoiceSlide(slideInfo) {
                 ${ choiceTiles }
             </div>
         </div>
-        <a class="backButton startover" onclick="showSlide('genesis')">start over</a>
+        <a class="backButton startover" onclick="showSlide('genesis')"><i class="fas fa-redo"></i></a>
         `;
     
 }

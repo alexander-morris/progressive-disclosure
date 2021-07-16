@@ -1,4 +1,8 @@
 <head>
+
+    
+    <script src="https://kit.fontawesome.com/94c5b12245.js" crossorigin="anonymous"></script>
+    
     <script src="/index.js" type="text/javascript"></script>
     <style>
         .choices {
@@ -11,9 +15,10 @@
             width: calc(100% / 3 - 2rem);
             overflow: hidden;
             display: inline-block;
-            border: 1px solid black;
             text-align: center;
-            background: white;
+            background: #ffffff57;
+            border-radius: 0.25rem;
+            margin: 0.1rem;
         }
         .choiceTile img {
             max-height: 200px;
@@ -31,7 +36,7 @@
         }
         body {
             background: url(img/background.jpg);
-            background-size: contain;
+            background-size: cover;
         }
         a.backButton {
             color: blue;
@@ -52,6 +57,7 @@
             display: block;
             float: left;
             font-size: 1.25rem;
+            width: 100%;
         }
         .slide {
             padding: 4rem;
@@ -62,6 +68,22 @@
         .top span {
             float: unset;
             font-size: 2.5rem;
+        }
+
+        .left {
+            float: left;
+            max-width: 10vw;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .left img {
+            max-width: 100%;
+        }
+        .right {
+            display: inline-block;
+            float: right;
+            max-width: calc(100% - 10vw);
+            padding: 1rem;
         }
     </style>
 </head>
